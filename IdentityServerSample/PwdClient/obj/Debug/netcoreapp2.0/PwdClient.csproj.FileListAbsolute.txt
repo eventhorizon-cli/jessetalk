@@ -1,0 +1,10 @@
+E:\jessetalk\IdentityServerSample\PwdClient\obj\Debug\netcoreapp2.0\PwdClient.csproj.CoreCompileInputs.cache
+E:\jessetalk\IdentityServerSample\PwdClient\obj\Debug\netcoreapp2.0\PwdClient.AssemblyInfoInputs.cache
+E:\jessetalk\IdentityServerSample\PwdClient\obj\Debug\netcoreapp2.0\PwdClient.AssemblyInfo.cs
+E:\jessetalk\IdentityServerSample\PwdClient\bin\Debug\netcoreapp2.0\PwdClient.deps.json
+E:\jessetalk\IdentityServerSample\PwdClient\bin\Debug\netcoreapp2.0\PwdClient.runtimeconfig.json
+E:\jessetalk\IdentityServerSample\PwdClient\bin\Debug\netcoreapp2.0\PwdClient.runtimeconfig.dev.json
+E:\jessetalk\IdentityServerSample\PwdClient\bin\Debug\netcoreapp2.0\PwdClient.dll
+E:\jessetalk\IdentityServerSample\PwdClient\bin\Debug\netcoreapp2.0\PwdClient.pdb
+E:\jessetalk\IdentityServerSample\PwdClient\obj\Debug\netcoreapp2.0\PwdClient.dll
+E:\jessetalk\IdentityServerSample\PwdClient\obj\Debug\netcoreapp2.0\PwdClient.pdb

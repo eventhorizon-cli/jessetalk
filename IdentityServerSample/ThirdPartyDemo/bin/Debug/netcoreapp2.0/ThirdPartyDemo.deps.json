@@ -1,0 +1,53 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "0c6a274d5210d67235d09b2ce160c6ae88d4afbe"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "ThirdPartyDemo/1.0.0": {
+        "dependencies": {
+          "IdentityModel": "3.3.1"
+        },
+        "runtime": {
+          "ThirdPartyDemo.dll": {}
+        }
+      },
+      "IdentityModel/3.3.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IdentityModel.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ThirdPartyDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IdentityModel/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oeQkzSAn5eewfAG1Zy/HXpt6koA+jULTEucqXbwZ93c7E2Xg+fbmhwJnWqQT4L7ZnqvM6g3X7OIrrVcVS0W1Vw==",
+      "path": "identitymodel/3.3.1",
+      "hashPath": "identitymodel.3.3.1.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
+      "path": "newtonsoft.json/11.0.1",
+      "hashPath": "newtonsoft.json.11.0.1.nupkg.sha512"
+    }
+  }
+}
