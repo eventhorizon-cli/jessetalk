@@ -1,0 +1,10 @@
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\bin\Debug\netcoreapp2.0\MvcCookieAuthSample.deps.json
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\bin\Debug\netcoreapp2.0\MvcCookieAuthSample.runtimeconfig.json
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\bin\Debug\netcoreapp2.0\MvcCookieAuthSample.runtimeconfig.dev.json
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\bin\Debug\netcoreapp2.0\MvcCookieAuthSample.dll
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\obj\Debug\netcoreapp2.0\MvcCookieAuthSample.csproj.CoreCompileInputs.cache
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\obj\Debug\netcoreapp2.0\MvcCookieAuthSample.AssemblyInfoInputs.cache
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\obj\Debug\netcoreapp2.0\MvcCookieAuthSample.AssemblyInfo.cs
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\bin\Debug\netcoreapp2.0\MvcCookieAuthSample.pdb
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\obj\Debug\netcoreapp2.0\MvcCookieAuthSample.dll
+G:\Study\jessetalk\MvcCookieAuthSample\MvcCookieAuthSample\obj\Debug\netcoreapp2.0\MvcCookieAuthSample.pdb
