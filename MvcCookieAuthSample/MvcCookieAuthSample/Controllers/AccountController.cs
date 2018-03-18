@@ -64,7 +64,7 @@ namespace MvcCookieAuthSample.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(RegisterViewModel loginViewModel, string returnUrl)
+        public async Task<IActionResult> Login(LoginViewModel loginViewModel, string returnUrl)
         {
             if (ModelState.IsValid)
             {
@@ -72,16 +72,23 @@ namespace MvcCookieAuthSample.Controllers
                 var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
                 if (user == null)
                 {
-
+                    ModelState.AddModelError(nameof(loginViewModel.Email), "Email not exists");
                 }
+                else
+                {
 
-                await _signInManager.SignInAsync(user, new AuthenticationProperties { IsPersistent = true });
-                return RedirectToLocal(returnUrl);
+                    var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, true, true);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToLocal(returnUrl);
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(nameof(LoginViewModel.Password), "Wrong password");
+                    }
+                }
             }
-            else
-            {
-                return View();
-            }
+            return View();
         }
 
         public async Task<IActionResult> MakeLogin()
