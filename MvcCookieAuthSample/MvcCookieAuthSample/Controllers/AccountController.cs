@@ -50,7 +50,7 @@ namespace MvcCookieAuthSample.Controllers
                 }
                 else
                 {
-
+                    AddErrors(identityResult);
                 }
             }
 
@@ -103,6 +103,14 @@ namespace MvcCookieAuthSample.Controllers
                 return Redirect(returnUrl);
             }
             return RedirectToAction(nameof(HomeController.Index), "Home");
+        }
+
+        private void AddErrors(IdentityResult identityResult)
+        {
+            foreach (var error in identityResult.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
         }
     }
 }

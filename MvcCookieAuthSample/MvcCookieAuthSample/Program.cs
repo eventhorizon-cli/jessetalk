@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MvcCookieAuthSample.Data;
 
 namespace MvcCookieAuthSample
 {
@@ -14,7 +15,11 @@ namespace MvcCookieAuthSample
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            BuildWebHost(args)
+                .MigratedBContext<ApplicationDbContext>(async (context, services) =>
+                {
+                    await new ApplicationContextSeed().SeedAsync(context, services);
+                }).Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
