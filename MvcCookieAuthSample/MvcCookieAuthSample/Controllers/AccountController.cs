@@ -66,15 +66,22 @@ namespace MvcCookieAuthSample.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(RegisterViewModel loginViewModel, string returnUrl)
         {
-            ViewBag.ReturnUrl = returnUrl;
-            var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
-            if (user == null)
+            if (ModelState.IsValid)
             {
+                ViewBag.ReturnUrl = returnUrl;
+                var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
+                if (user == null)
+                {
 
+                }
+
+                await _signInManager.SignInAsync(user, new AuthenticationProperties { IsPersistent = true });
+                return RedirectToLocal(returnUrl);
             }
-
-            await _signInManager.SignInAsync(user, new AuthenticationProperties { IsPersistent = true });
-            return RedirectToLocal(returnUrl);
+            else
+            {
+                return View();
+            }
         }
 
         public async Task<IActionResult> MakeLogin()
