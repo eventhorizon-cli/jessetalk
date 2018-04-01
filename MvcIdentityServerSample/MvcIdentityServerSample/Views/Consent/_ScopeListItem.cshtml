@@ -1,0 +1,22 @@
+﻿@model ScopeViewModel
+
+<li>
+    <label>
+        <input type="checkbox"
+               name="ScopesConsented"
+               value="@Model.Name"
+               checked=@Model.Checked
+               disabled=@Model.Required />
+        <strong>@Model.Name</strong>
+        @if (Model.Emphasize)
+        {
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+        }
+    </label>
+    @if (string.IsNullOrEmpty(Model.Description))
+    {
+        <div>
+            <label for="scopes_@Model.Name">@Model.Description</label>
+        </div>
+    }
+</li>
