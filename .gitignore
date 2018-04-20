@@ -30,3 +30,8 @@
 /MvcCookieAuthSample/MvcCookieAuthSample/obj/Debug/netcoreapp2.0/MvcCookieAuthSample.AssemblyInfo.cs
 /MvcCookieAuthSample/MvcCookieAuthSample/obj/Debug/netcoreapp2.0/MvcCookieAuthSample.AssemblyInfoInputs.cache
 /MvcCookieAuthSample/MvcCookieAuthSample/obj/Debug/netcoreapp2.0/MvcCookieAuthSample.csproj.CoreCompileInputs.cache
+/docker/User.Api/bin
+/docker/User.Api/obj
+/docker/User.Api/.vs
+/docker/User.Api/User.Api/obj
+/docker/User.Api/User.Api/bin
